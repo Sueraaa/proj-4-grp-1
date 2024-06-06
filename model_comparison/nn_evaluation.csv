@@ -1,0 +1,5 @@
+,Network_Model,With Height & Weight?,Accuracy,Loss
+0,obese/overweight_or_not,Yes,0.9905303120613098,0.03290793299674988
+1,obese/overweight_or_not,No,0.8844696879386902,0.525794267654419
+2,obese_or_overweight,Yes,0.9871134161949158,0.04306513071060181
+3,obese_or_overweight,No,0.8376288414001465,0.6192938685417175

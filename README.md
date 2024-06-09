@@ -1,15 +1,57 @@
-# proj-4-grp-1
-## Project 4 
 
-### Objective
+# Predicting Obesity Levels Based on Lifestyle Factors
+This project aims to predict obesity levels among individuals based on various lifestyle and physical factors. By analyzing the relationship between these factors and obesity levels, we aim to provide insights that can help in the prevention and management of obesity. The dataset used in this project includes attributes related to eating habits, physical activity, and other lifestyle factors.
 
-1. Obesity issue becomes a global issues. It does harm to health issues and cause the fatality. 
-2. We try to explore the corelation between multiple factors (varables) to the target (obesity).
-3. We aim to build up a model through machine training to predict the possibility of obesity. 
-4. With evaluating the model, we hope to get a better model to accurately predict the obesity level by input variables. 
+![Chilhood_Obesity](/Images/Childhood-Obesity-Problem.jpg)
 
-### Locate the data, clean the data, and build the dataframe
+## Objectives:
 
+1. To develop predictive models that accurately classify individuals into different obesity levels based on their lifestyle and physical characteristics. 
+2. We aim to investigate the correlation between various factors (variables) and the target variable (obesity) to understand their relationships and impacts.
+3. Our goal is to develop a predictive model through machine learning that can accurately estimate the likelihood of obesity based on these factors. 
+4. By evaluating and refining our model, we strive to enhance its accuracy in predicting obesity levels from input variables, ultimately aiming for a robust and reliable predictive tool.
+
+
+## Data Description:
+
+The dataset includes the following features:
+
+* Gender: Categorical variable indicating the gender of the individual.
+* Age: Continuous variable representing the age of the individual.
+* Height: Continuous variable representing the height of the individual.
+* Weight: Continuous variable representing the weight of the individual.
+* Family History with Overweight: Binary variable indicating whether there is a family history of being overweight.
+* High Caloric Food Consumption (FAVC): Binary variable indicating whether the individual frequently consumes high-caloric food.
+* Vegetable Consumption (FCVC): Continuous variable indicating the frequency of vegetable consumption in meals.
+* Number of Main Meals (NCP): Continuous variable representing the number of main meals per day.
+* Consumption of Food Between Meals (CAEC): Categorical variable indicating the frequency of food consumption between meals.
+* Smoking Habits (SMOKE): Binary variable indicating whether the individual smokes.
+* Daily Water Intake (CH2O): Continuous variable representing the daily water intake.
+* Monitoring of Calorie Intake (SCC): Binary variable indicating whether the individual monitors their calorie intake.
+* Frequency of Physical Activity (FAF): Continuous variable representing the frequency of physical activity per week.
+* Screentime on Technological Devices (TUE): Continuous variable indicating the time spent using technological devices per day.
+* Alcohol Consumption (CALC): Categorical variable indicating the frequency of alcohol consumption.
+* Mode of Transportation (MTRANS): Categorical variable representing the mode of transportation usually used by the individual.
+* Obesity Level (Target): Categorical variable indicating the obesity level of the individual (e.g., Normal Weight, Overweight, Obesity Type I, etc.)
+
+## Data Sources: 
+* Data sourced from UC Irvine Machine Learning Repository using ‘unimlrepo’ 
+* Estimation of Obesity Levels Based On Eating Habits and Physical Condition . (2019). UCI Machine Learning Repository. 
+[Obesity Levels](https://doi.org/10.24432/C5H31Z)
+
+## Modeling Techniques:
+1. Neural Networks: 
+* 
+
+
+2. Logistic Regression:
+ * 
+
+3. Support Vector Machine (SVM):
+
+*  SVM was used to classify individuals into different obesity levels based on their lifestyle and physical factors. This machine learning technique helps in identifying the obesity category of an individual (e.g., Normal Weight, Overweight Level I, Obesity Type I, etc.) by analyzing various input features
+
+## Locate the data, clean the data, and build the dataframe
 
 * Collect Data from various sources;
 * Dataset features a combination of real-world and artificially 

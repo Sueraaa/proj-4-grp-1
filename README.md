@@ -1,12 +1,15 @@
 # proj-4-grp-1
 ## Project 4 
 
-### Objective
+
+![alt text](Obesity.jpeg)
 
 1. Obesity issue becomes a global issues. It does harm to health issues and cause the fatality. 
 2. We try to explore the corelation between multiple factors (varables) to the target (obesity).
 3. We aim to build up a model through machine training to predict the possibility of obesity. 
 4. With evaluating the model, we hope to get a better model to accurately predict the obesity level by input variables. 
+
+
 
 ### Locate the data, clean the data, and build the dataframe
 

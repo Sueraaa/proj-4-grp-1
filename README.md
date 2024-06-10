@@ -3,7 +3,7 @@
 This project aims to predict obesity levels among individuals based on various lifestyle and physical factors. By analyzing the relationship between these factors and obesity levels, we aim to provide insights that can help in the prevention and management of obesity. The dataset used in this project includes attributes related to eating habits, physical activity, and other lifestyle factors.
 
 ![Chilhood_Obesity](/Images/Childhood-Obesity-Problem.jpg)
-
+[IMG Referenece](https://beaumonteh.com/childhood-obesity-problem/)
 ## Objectives:
 
 1. To develop predictive models that accurately classify individuals into different obesity levels based on their lifestyle and physical characteristics. 

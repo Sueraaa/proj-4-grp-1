@@ -1,0 +1,4 @@
+Metric,Score,Model
+Precision,0.6649879704203606,With Height and Weight
+Recall,0.6808510638297872,With Height and Weight
+Accuracy,0.6808510638297872,With Height and Weight

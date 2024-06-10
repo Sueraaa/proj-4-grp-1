@@ -1,0 +1,7 @@
+﻿Model,Accuracy,Weight/Height
+NN,98.92%,Yes
+NN,81.91%,No
+SVM,98.82%,Yes
+SVM,68.09%,No
+Linear Reg.,93.00%,Yes
+Linear Reg.,70.00%,No

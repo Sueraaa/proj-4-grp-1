@@ -111,7 +111,46 @@ The most effective model was the one which returned the highest accuracy while m
 The Neural Network models used in tandem are able to accurately predict the health status, overweight or obese, to an accuracy of 81%. Based entirely off non-invasive lifestyle factors this is considered an incredibly accurate result.
 
 2.  **Logistic Regression**
+
 3.  **Support Vector Machine (SVM)**
+
+Support Vector Machine (SVM) modelling was used to categorise individuals as either normal or overweight/obese, then to further distinguish between overweight/obese. The model uses all the feature data to predict the target.
+
+Two models were created:
+
+* With BMI, Height & Weight
+* Without BMI, Height & Weight
+
+BMI, Height & Weight all skew the model to greater than 98% accuracy. Given these are features directly related to health and not lifestyle it was decided to run a parallel model without these features.
+
+The SVM model was optimized by altering several elements:
+
+* Kernel function (linear, polynomial, RBF)
+* Regularization parameter (C)
+* Gamma parameter (for non-linear kernels)
+
+The most effective model was the one which returned the highest accuracy while minimizing the loss. The top models were configured as below:
+
+**Obese/Overweight or Not**
+
+|***With BMI, Height, Weight***|***Without BMI, Height, Weight***|
+|---|---|
+|**Kernel**: linear	|**Kernel**: linear
+|**C**: 1.0	|**C**: 1.0
+|**Gamma**: scale	|**Gamma**: scale
+|**Accuracy**: 99.5%	|**Accuracy** : 73.2%
+
+
+**Obese or Overweight**
+
+|***With BMI, Height, Weight***|***Without BMI, Height, Weight***|
+|---|---|
+|**Kernel**: linear	|**Kernel**: RBF
+|**C**: 1.0	|**C**: 1.0
+|**Gamma**: scale	|**Gamma**: auto
+|**Accuracy**: 99.6%	|**Accuracy** : 73.3%
+
+The SVM models demonstrate high accuracy in predicting obesity status. Even without BMI, Height, and Weight, the models provide valuable insights based on lifestyle factors, achieving up to 73.3% accuracy. These results underscore the importance of both health-related and lifestyle features in predicting obesity
 
 ## Data Processing and Feature Engineering
 

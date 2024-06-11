@@ -112,7 +112,46 @@ The Neural Network models used in tandem are able to accurately predict the heal
 
 2.  **Logistic Regression**
 
-3.  **Support Vector Machine (SVM)**
+Logistic Regression was utilised to classify individuals into categories of normal weight, overweight, or obese. The model used all feature data to predict the target variable. Two separate models were developed to evaluate the impact of certain features:
+
+* Including BMI, Height, & Weight
+* Excluding BMI, Height, & Weight
+
+Although BMI, Height, and Weight significantly increased model accuracy, these features are directly related to health rather than lifestyle. Hence, a parallel model excluding these features was created for comparison.
+
+The Logistic Regression model was optimised by adjusting various parameters:
+
+* Regularisation strength
+* Solver
+* Maximum iterations
+
+The models with the highest accuracy and minimised loss were selected. The configurations and results are as follows:
+
+---
+
+**Obese/Overweight or Not**
+
+| ***With BMI, Height, Weight*** | ***Without BMI, Height, Weight*** |
+| --- | --- |
+| **Regularization Strength (C):** 0.1 | **Regularization Strength (C):** 10 |
+| **Solver:** lbfgs | **Solver:** lbfgs |
+| **Maximum Iterations:** 100 | **Maximum Iterations:** 100 |
+| **Accuracy:** 90.0% | **Accuracy:** 70.0% |
+
+---
+
+**Obese or Overweight**
+
+| ***With BMI, Height, Weight*** | ***Without BMI, Height, Weight*** |
+| --- | --- |
+| **Regularization Strength (C):** 0.1 | **Regularization Strength (C):** 10 |
+| **Solver:** lbfgs | **Solver:** lbfgs |
+| **Maximum Iterations:** 100 | **Maximum Iterations:** 100 |
+| **Accuracy:** 90.0% | **Accuracy:** 70.0% |
+
+By using these Logistic Regression models in tandem, we achieved reliable predictions of health status, distinguishing between overweight and obese categories with high accuracy. These results are particularly impressive given that they are based on non-invasive lifestyle factors.
+
+4.  **Support Vector Machine (SVM)**
 
 Support Vector Machine (SVM) modelling was used to categorise individuals as either normal or overweight/obese, then to further distinguish between overweight/obese. The model uses all the feature data to predict the target.
 

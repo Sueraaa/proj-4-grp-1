@@ -1,98 +1,161 @@
 
+!['Obesity Banner'](Images/Childhood_Obesity_Problem.png)
+
+
 # Predicting Obesity Levels Based on Lifestyle Factors
-This project aims to predict obesity levels among individuals based on various lifestyle and physical factors. By analyzing the relationship between these factors and obesity levels, we aim to provide insights that can help in the prevention and management of obesity. The dataset used in this project includes attributes related to eating habits, physical activity, and other lifestyle factors.
 
-![Chilhood_Obesity](/Images/Childhood-Obesity-Problem.jpg)
-[IMG Referenece](https://beaumonteh.com/childhood-obesity-problem/)
-## Objectives:
+## Project Overview
 
-1. To develop predictive models that accurately classify individuals into different obesity levels based on their lifestyle and physical characteristics. 
-2. We aim to investigate the correlation between various factors (variables) and the target variable (obesity) to understand their relationships and impacts.
-3. Our goal is to develop a predictive model through machine learning that can accurately estimate the likelihood of obesity based on these factors. 
-4. By evaluating and refining our model, we strive to enhance its accuracy in predicting obesity levels from input variables, ultimately aiming for a robust and reliable predictive tool.
+This project aims to predict obesity levels among individuals based on various lifestyle and physical factors. By analysing the relationship between these factors and obesity levels, we aim to provide insights that can help in the prevention and management of obesity. The dataset used in this project includes attributes related to eating habits, physical activity, and other lifestyle factors.
+
+(https://beaumonteh.com/wp-content/uploads/2022/06/Childhood-Obesity-Problem.jpg)
 
 
-## Data Description:
 
-The dataset includes the following features:
+##Group Members
+Sunera Athukorala
+Steph Adey
+Laura Liu
+John Robertsonobertson
 
-* Gender: Categorical variable indicating the gender of the individual.
-* Age: Continuous variable representing the age of the individual.
-* Height: Continuous variable representing the height of the individual.
-* Weight: Continuous variable representing the weight of the individual.
-* Family History with Overweight: Binary variable indicating whether there is a family history of being overweight.
-* High Caloric Food Consumption (FAVC): Binary variable indicating whether the individual frequently consumes high-caloric food.
-* Vegetable Consumption (FCVC): Continuous variable indicating the frequency of vegetable consumption in meals.
-* Number of Main Meals (NCP): Continuous variable representing the number of main meals per day.
-* Consumption of Food Between Meals (CAEC): Categorical variable indicating the frequency of food consumption between meals.
-* Smoking Habits (SMOKE): Binary variable indicating whether the individual smokes.
-* Daily Water Intake (CH2O): Continuous variable representing the daily water intake.
-* Monitoring of Calorie Intake (SCC): Binary variable indicating whether the individual monitors their calorie intake.
-* Frequency of Physical Activity (FAF): Continuous variable representing the frequency of physical activity per week.
-* Screentime on Technological Devices (TUE): Continuous variable indicating the time spent using technological devices per day.
-* Alcohol Consumption (CALC): Categorical variable indicating the frequency of alcohol consumption.
-* Mode of Transportation (MTRANS): Categorical variable representing the mode of transportation usually used by the individual.
-* Obesity Level (Target): Categorical variable indicating the obesity level of the individual (e.g., Normal Weight, Overweight, Obesity Type I, etc.)
+## Objectives
 
-## Data Sources: 
-* Data sourced from UC Irvine Machine Learning Repository using ‘unimlrepo’ 
-* Estimation of Obesity Levels Based On Eating Habits and Physical Condition . (2019). UCI Machine Learning Repository. 
-[Obesity Levels](https://doi.org/10.24432/C5H31Z)
+1.  Develop predictive models to classify individuals into different obesity levels.
+2.  Investigate the correlation between various factors and obesity to understand their relationships and impacts.
+3.  Develop a machine learning model to estimate the likelihood of obesity based on these factors.
+4.  Refine the model to enhance its accuracy in predicting obesity levels.
 
-## Modeling Techniques:
-1. Neural Networks: 
-* 
+## Data Description
 
+The dataset includes features such as gender, age, height, weight, family history with overweight, high-caloric food consumption, vegetable consumption, number of main meals, food consumption between meals, smoking habits, daily water intake, monitoring of calorie intake, frequency of physical activity, screen time, alcohol consumption, mode of transportation, and obesity level.
 
-2. Logistic Regression:
- * 
+An initial data analysis has been conducted to measure how the features are represented against the obesity targets.
 
-3. Support Vector Machine (SVM):
+Omitting the physical factors (BMI, height & weight) we get a general overview on the impact of each feature on the weight categorisation
 
-*  SVM was used to classify individuals into different obesity levels based on their lifestyle and physical factors. This machine learning technique helps in identifying the obesity category of an individual (e.g., Normal Weight, Overweight Level I, Obesity Type I, etc.) by analyzing various input features
+![‘Feature Importance’](Images/feature_importance_no_bmi.png)
 
-## Locate the data, clean the data, and build the dataframe
+The features based on their weight classification have been summarised through the use of box and whisker plots:
 
-* Collect Data from various sources;
-* Dataset features a combination of real-world and artificially 
-generated data.
-* Data analysed and matched against expected categorical 
-values. Any features with entries which were outside the 
-expected categorical or integer measure need to be explored.
-* Binary data is converted to numerical form, making it suitable 
-for machine learning models.
-* Categorical data is replaced with the appropriate categorical 
-measure for consistency in analysis.
-* Discrete categorical data (i.e 1, 2 or 3) is replaced with the 
-appropriate categorical measurement to represent data 
-accurately.
+![Age vs Obesity’](Images/AgevsObesity.png)
 
-### Data Normalization:
-* Ensures all data is in a suitable format for model training.
-Conclusion.
-* Data Preparation: The code prepares the obesity dataset for analysis
-by converting categorical data to numerical data, creating new 
-features, and normalizing the data.
+![‘Height vs Obesity’](Images/HeightvsObesity.png)
 
-### Feature Engineering:
-* A new BMI feature is created, representing the ratio of weight 
-to height squared.
-* A new BMI feature is created, and other features are bucketed into categories.
-* Features are bucketed into categories to simplify analysis and 
-improve model performance.
-* Readiness for Modeling: The processed data is now suitable for training machine learning models to predict obesity levels based on various factors.
+![‘Weight vs Obesity’](Images/WeightvsObesity.png)
 
-### Explore the correlation, building a regression analysis and plot
+![‘Vegetable intake vs Obesity’](Images/Meal_Vegetable_IntakevsObesityvsObesity.png)
+
+![‘main meals vs Obesity’](Images/Main_Meals_per_DayvsObesity.png)
+
+![‘water intake vs Obesity’](Images/Daily_Water_Intake_LvsObesity.png)
+
+![‘physical activity vs Obesity’](Images/Physical_ActivityvsObesity.png)
+
+![‘screentime vs Obesity’](Images/Screentime_hrsvsObesity.png)
 
 
-### Train the machine to build a model 
-* Train machine learning models using the processed data.
-* Evaluate model performance and interpret results.
-* Explore feature importance to understand which factors 
-contribute most to obesity levels.
-* By following these steps, you can build predictive models and gain 
-insights into the factors affecting obesity
+## Data Sources
 
-### Evaluate the model and choose the best one
+-   Data sourced from the UC Irvine Machine Learning Repository:  Obesity Levels Dataset.
 
-### Input variables and predict
+## Modeling Techniques
+
+1.  **Neural Networks**
+
+Neural Network modelling was used to categorise individuals as either normal or overweight/obese, then to further distinguish between overweight/obese. The model uses all the feature data to predict the target.
+
+  Two models were created:
+
+  * With BMI, Height & Weight
+  * Without BMI, Height & Weight
+
+BMI, Height & Weight all skew the model to greater than 99% accuracy. Given these are features directly related to health and not lifestyle it was decided to run a parallel model without these features.
+
+The neural network model was optimised by altering several elements:
+
+  * Number of hidden layers
+  * Number of neurons
+  * Activation function
+
+The most effective model was the one which returned the highest accuracy while minimising the loss. The top models were configured as below:
+
+---
+
+**Obese/Overweight or Not**
+
+|***With BMI, Height, Weight***|***Without BMI, Height, Weight***|
+|---|---|
+| **Hidden Layers:** 3| **Hidden Layers:** 2 |
+| **Neurons:** 30 | **Neurons:** 25|
+| **Activation Function:** selu | **Activation Function:** selu|
+| **Accuracy:** 99.4% | **Accuracy:** 91.8%|
+---
+
+**Obese or Overweight**
+
+|***With BMI, Height, Weight***|***Without BMI, Height, Weight***|
+|---|---|
+|**Hidden Layers:** 2|**Hidden Layers:** 2|
+|**Neurons:** 30|**Neurons:** 35|
+|**Activation Function:** selu|**Activation Function:** relu|
+|**Accuracy:** 99.7%|**Accuracy:** 88.9%|
+
+The Neural Network models used in tandem are able to accurately predict the health status, overweight or obese, to an accuracy of 81%. Based entirely off non-invasive lifestyle factors this is considered an incredibly accurate result.
+
+2.  **Logistic Regression**
+3.  **Support Vector Machine (SVM)**
+
+## Data Processing and Feature Engineering
+
+-   Data cleaning, normalisation, and standardisation are performed to prepare the dataset for analysis.
+-   Binary and categorical data are converted to numerical form.
+-   New features, such as BMI, are created to enhance the model's predictive power.
+-   The data is analysed to match expected categorical values, and necessary conversions are applied for consistency.
+
+## Model Training and Evaluation
+
+-   Various machine learning models are trained using the processed data.
+-   Model performance is evaluated, and results are interpreted to understand feature importance.
+-   Iterative optimisation and evaluation processes are documented to refine model performance.
+
+## How to Run the Project
+
+### Prerequisites
+
+-   Python 3.x
+-   Jupyter Notebook
+-   An independent library from the UC Irvine Machine Learning, `pip install ucimlrepo`
+-   Required Python libraries: pandas, numpy, scikit-learn, matplotlib, seaborn, sqlalchemy
+
+### Setup Instructions
+
+1.  Clone the repository:  `git clone https://github.com/Sueraaa/proj-4-grp-1.git`
+2.  Navigate to the project directory:  `cd proj-4-grp-1`
+3.  Install the required libraries
+4.  Open the Jupyter Notebooks to view and run the code.
+
+### Running the Model
+
+Run  `COMPLETE_modelling_analysis.ipynb`  to load, initialise, train, evaluate, and optimise the model. Data is read through pyspark from an S3 bucket. A .csv file `ObesityDataSet_raw_and_data_synthetic` which is the entire dataset has been included in the `data` directory for ease of access.
+
+Data type information is read directly from the UC Irvine Machine Learning Repository using the `fetch_repo` command from the ucimlrepo library. This dataset has the id 544. A .csv file `database_dtype` has been included in the `data` directory for ease of access.
+
+Processed data has been stored in the variable `processed_feature_data`
+
+Models have been output to the `model_comparison` directory in .csv format. This includes modelling with and without BMI, height & weight.
+
+An additional file `all_model_top_comparisons.csv` has been included in the same directory which identifies top performing models by accuracy for each modelling technique.
+
+Feature analysis visualisations have been out to the `Images` directory in .png format. An additional file `top_model_comparisons.png` has been included which compares the top performing models for each modelling technique.
+
+
+## Conclusion
+
+Through model optimisation we’ve been able to produce a model which is accurate in predicting obesity to 81% accuracy. Based purely on lifestyle  parameters this has the potential to greatly increase access for those in need of assistance in managing their weight and weight related co-morbidities. The ease of access of the questionnaire and the non-invasive nature of the questions means we're able to produce a more accurate snapshot of peoples weight condition.
+
+
+## References
+- itertools — Functions creating iterators for efficient looping. (n.d.). Python Documentation. https://docs.python.org/3/library/itertools.html
+- GridSearch — 3.2. Tuning the hyper-parameters of an estimator — scikit-learn 1.5.0 documentation
+
+

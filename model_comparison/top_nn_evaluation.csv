@@ -1,5 +1,5 @@
 ,Network_Model,Height_&_Weight,Neurons,Hidden_Layers,Activation_Function,Accuracy,Loss
-0,obese_or_overweight,Yes,30,2,selu,0.9974226951599121,0.012662149034440517
-1,obese_or_overweight,No,35,2,selu,0.8891752362251282,0.39317014813423157
-2,obese_overweight_or_not,Yes,35,3,selu,0.9924242496490479,0.028113801032304764
-3,obese_overweight_or_not,No,25,3,softmax,0.9185606241226196,0.26674655079841614
+0,obese_overweight_or_not,No,35,2,softmax,0.9166666865348816,0.2702508866786957
+1,obese_overweight_or_not,Yes,25,3,selu,0.9943181872367859,0.03059403784573078
+2,obese_or_overweight,No,30,2,relu,0.8865979313850403,0.6110456585884094
+3,obese_or_overweight,Yes,35,3,selu,0.9974226951599121,0.027294011786580086

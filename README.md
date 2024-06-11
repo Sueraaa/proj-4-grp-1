@@ -1,22 +1,30 @@
+![alt text](Images/Obesity.jpeg)
 
-!['Obesity Banner'](Images/Childhood_Obesity_Problem.png)
+**Sunera Athukorala**
+
+**Steph Adey**
+
+**Laura Liu**
+
+**John Robertson**
 
 
 # Predicting Obesity Levels Based on Lifestyle Factors
+This project aims to predict obesity levels among individuals based on various lifestyle and physical factors. By analyzing the relationship between these factors and obesity levels, we aim to provide insights that can help in the prevention and management of obesity. The dataset used in this project includes attributes related to eating habits, physical activity, and other lifestyle factors.
 
 ## Project Overview
 
 This project aims to predict obesity levels among individuals based on various lifestyle and physical factors. By analysing the relationship between these factors and obesity levels, we aim to provide insights that can help in the prevention and management of obesity. The dataset used in this project includes attributes related to eating habits, physical activity, and other lifestyle factors.
 
-(https://beaumonteh.com/wp-content/uploads/2022/06/Childhood-Obesity-Problem.jpg)
+!['Childhood Obesity](Images/Childhood_Obesity_Problem.jpg)
+=======
 
-
-
-##Group Members
-Sunera Athukorala
-Steph Adey
-Laura Liu
-John Robertsonobertson
+### Locate the data, clean the data, and build the dataframe
+=======
+1. To develop predictive models that accurately classify individuals into different obesity levels based on their lifestyle and physical characteristics. 
+2. We aim to investigate the correlation between various factors (variables) and the target variable (obesity) to understand their relationships and impacts.
+3. Our goal is to develop a predictive model through machine learning that can accurately estimate the likelihood of obesity based on these factors. 
+4. By evaluating and refining our model, we strive to enhance its accuracy in predicting obesity levels from input variables, ultimately aiming for a robust and reliable predictive tool.
 
 ## Objectives
 
@@ -43,7 +51,7 @@ The features based on their weight classification have been summarised through t
 
 ![‘Weight vs Obesity’](Images/WeightvsObesity.png)
 
-![‘Vegetable intake vs Obesity’](Images/Meal_Vegetable_IntakevsObesityvsObesity.png)
+![‘Vegetable intake vs Obesity’](Images/Meal_Vegetable_IntakevsObesity.png)
 
 ![‘main meals vs Obesity’](Images/Main_Meals_per_DayvsObesity.png)
 
